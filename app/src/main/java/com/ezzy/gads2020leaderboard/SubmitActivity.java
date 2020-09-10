@@ -66,7 +66,6 @@ public class SubmitActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (!isEmpty(fNameEditText.getText().toString()) || !isEmpty(lNameEditText.getText().toString())
                         || !isEmpty(emailEditText.getText().toString()) || !isEmpty(linkEditText.getText().toString())){
-//                    submit();
                     ConfirmSubmissionDialog dialog = new ConfirmSubmissionDialog();
                     dialog.show(getSupportFragmentManager(), "Confirm Submission");
                 }else {
@@ -118,29 +117,10 @@ public class SubmitActivity extends AppCompatActivity {
     }
 
     public void submit(){
-//        service = Api.retrofitInstance()
-//                .create(GetGadsService.class);
-//        if (service != null){
-//            service.submit(fNameEditText.getText().toString(), lNameEditText.getText().toString(), emailEditText.getText().toString(),
-//                    linkEditText.getText().toString(), new Callback<Project>() {
-//                        @Override
-//                        public void onResponse(Call<Project> call, Response<Project> response) {
-//                            SubmissionSuccessDialog dialog = new SubmissionSuccessDialog();
-//                            dialog.show(getSupportFragmentManager(), "Submission Success");
-//                        }
-//
-//                        @Override
-//                        public void onFailure(Call<Project> call, Throwable t) {
-//                            SubmissionWarningDialog dialog = new SubmissionWarningDialog();
-//                            dialog.show(getSupportFragmentManager(), "Submission Error");
-//                        }
-//                    });
-//        }else {
-//            SubmissionWarningDialog dialog = new SubmissionWarningDialog();
-//            dialog.show(getSupportFragmentManager(), "Error submitting");
-//        }
+
         postData(fNameEditText.getText().toString(), lNameEditText.getText().toString(),
                 emailEditText.getText().toString(), linkEditText.getText().toString());
+
     }
 
     private void makeToast(String message){

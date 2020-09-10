@@ -17,17 +17,4 @@ public class Api{
         return retrofit;
     }
 
-
-//    @Override
-//    public Retrofit retrofitInstance(String baseUrl) {
-//        baseUrl = FORM_BASE_URL;
-//        if (retrofit == null){
-//            retrofit = new Retrofit.Builder()
-//                    .baseUrl(baseUrl)
-//                    .build();
-//        }
-//
-//        return retrofit;
-//    }
-
 }

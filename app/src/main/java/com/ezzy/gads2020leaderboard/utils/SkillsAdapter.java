@@ -26,7 +26,6 @@ public class SkillsAdapter extends RecyclerView.Adapter<SkillsAdapter.ViewHolder
 
     public SkillsAdapter(List<Skill> skillList, Context mContext) {
         this.skillList = skillList;
-//        this.mContext = mContext;
         this.mContext = mContext;
     }
 
@@ -45,11 +44,6 @@ public class SkillsAdapter extends RecyclerView.Adapter<SkillsAdapter.ViewHolder
         holder.nameTextView.setText(skillList.get(position).getName());
         holder.skillsTextView.setText(skillList.get(position).getSkill() + " Skill IQ,");
         holder.countryTextView.setText(skillList.get(position).getCountry());
-//        Picasso.Builder builder = new Picasso.Builder(mContext);
-//        builder.downloader(new OkHttp3Downloader(mContext));
-//        builder.build().load(skillList.get(position).getBadgeUrl())
-//                .placeholder(R.drawable.skill)
-//                .into(holder.badgeImageView);
         Glide.with(mContext)
                 .load(skillList.get(position).getBadgeUrl())
                 .centerCrop()

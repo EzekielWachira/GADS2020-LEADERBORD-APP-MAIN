@@ -29,28 +29,14 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link SkillIQFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class SkillIQFragment extends Fragment {
     private RecyclerView recyclerView;
     private SkillsAdapter adapter;
     private List<Skill> skillList = new ArrayList<>();
     Skill topSkillModel;
-    //    private BaseAdapter adapter;
+
     private Context mContext;
     private GetGadsService service;
-
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-//    private static final String ARG_PARAM1 = "param1";
-//    private static final String ARG_PARAM2 = "param2";
-//
-//    // TODO: Rename and change types of parameters
-//    private String mParam1;
-//    private String mParam2;
 
     public SkillIQFragment() {}
 
@@ -89,7 +75,7 @@ public class SkillIQFragment extends Fragment {
         }, new com.android.volley.Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Toast.makeText(getActivity(), error.getMessage(), Toast.LENGTH_SHORT).show();
+                makeToast(error.getMessage());
             }
         });
 
@@ -107,34 +93,12 @@ public class SkillIQFragment extends Fragment {
         recyclerView.addItemDecoration(new VerticalItemDecorator(20));
         recyclerView.setLayoutManager(new LinearLayoutManager(view.getContext()));
         fetchData(recyclerView);
-//        service = RetrofitClientInstance.retrofitInstance()
-//                .create(GetGadsService.class);
-//        Call<List<Skill>> listCall = service.getSkillLeaders();
-//        listCall.enqueue(new Callback<List<Skill>>() {
-//            @Override
-//            public void onResponse(Call<List<Skill>> call, Response<List<Skill>> response) {
-//                adapter = new SkillsAdapter(response.body());
-//                recyclerView.setAdapter(adapter);
-////                generateSkillList(response.body());
-//            }
-//
-//            @Override
-//            public void onFailure(Call<List<Skill>> call, Throwable t) {
-//                makeToast("Error occurred retrieving the data");
-//            }
-//        });
+
         return view;
     }
 
 
-    private void generateSkillList(List<Skill> skillList){
-//        adapter = new SkillsAdapter(skillList, mContext);
-//        adapter = new BaseAdapter(mContext, skillList, Skill.class);
-        recyclerView.setLayoutManager(new LinearLayoutManager(mContext));
-        recyclerView.setAdapter(adapter);
-    }
-
     private void makeToast(String message){
-        Toast.makeText(mContext, message, Toast.LENGTH_SHORT).show();
+        Toast.makeText(getActivity(), message, Toast.LENGTH_SHORT).show();
     }
 }
