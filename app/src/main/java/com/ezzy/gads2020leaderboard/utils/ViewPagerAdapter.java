@@ -22,13 +22,9 @@ public class ViewPagerAdapter extends FragmentStateAdapter {
         Fragment fragment = null;
         switch (position){
             case 0:
-//                fragment = new LearningLeadersFragment();
-//                break;
                 return new TopLearnersFragment();
             case 1:
                 return new SkillIQFragment();
-//                fragment = new SkillIQLeadersFragment();
-//                break;
             default:
                 return null;
         }

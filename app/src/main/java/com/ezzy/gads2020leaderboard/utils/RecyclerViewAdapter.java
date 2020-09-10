@@ -21,12 +21,10 @@ import java.util.List;
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>{
 
     private List<Leaner> learnerList;
-//    private List<Skill> skillList;
     private Context mContext;
 
     public RecyclerViewAdapter(List<Leaner> learnerList, Context mContext) {
         this.learnerList = learnerList;
-//        this.mContext = mContext;
         this.mContext = mContext;
     }
 
@@ -44,11 +42,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         holder.nameTextView.setText(learnerList.get(position).getName());
         holder.descriptionTextView.setText(learnerList.get(position).getHours() + " Learning Hours,");
         holder.countryTextView.setText(learnerList.get(position).getCountry());
-//        Picasso.Builder builder = new Picasso.Builder(mContext);
-//        builder.downloader(new OkHttp3Downloader(mContext));
-//        builder.build().load(learnerList.get(position).getBadgeUrl())
-//                .placeholder(R.drawable.learner)
-//                .into(holder.badgeImageView);
         Glide.with(mContext)
                 .load(learnerList.get(position).getBadgeUrl())
                 .centerCrop()

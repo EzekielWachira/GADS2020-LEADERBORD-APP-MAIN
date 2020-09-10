@@ -1,7 +1,6 @@
 package com.ezzy.gads2020leaderboard.services;
 
 import com.ezzy.gads2020leaderboard.models.Leaner;
-import com.ezzy.gads2020leaderboard.models.Project;
 import com.ezzy.gads2020leaderboard.models.Skill;
 import java.util.List;
 
