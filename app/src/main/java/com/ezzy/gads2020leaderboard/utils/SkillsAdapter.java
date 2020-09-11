@@ -43,7 +43,7 @@ public class SkillsAdapter extends RecyclerView.Adapter<SkillsAdapter.ViewHolder
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.nameTextView.setText(skillList.get(position).getName());
-        holder.skillsTextView.setText(skillList.get(position).getSkill() + " Skill IQ,");
+        holder.skillsTextView.setText(skillList.get(position).getSkill() + " Skill IQ Score,");
         holder.countryTextView.setText(skillList.get(position).getCountry());
 //        Picasso.Builder builder = new Picasso.Builder(mContext);
 //        builder.downloader(new OkHttp3Downloader(mContext));
