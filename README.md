@@ -24,18 +24,18 @@ Google Africa Developer Scholarship 2020 Learning phase II practice project
 <h2>Screenshots</h2>
 <div>
  <h3>Splash screen</h3>
-<img src="screenshots/splash.png"/>
+<img src="screenshots/splash.png" width="260" height="500"/>
  </div>
  <h3>Top Leaners</h3>
-<img src="https://github.com/EzekielWachira/GADS2020-LEADERBORD-APP-MAIN/blob/master/screenshots/top_learners.png"/>
+<img src="https://github.com/EzekielWachira/GADS2020-LEADERBORD-APP-MAIN/blob/master/screenshots/top_learners.png" width="260" height="500"/>
 <h3>Top Skill IQ</h3>
-<img src="https://github.com/EzekielWachira/GADS2020-LEADERBORD-APP-MAIN/blob/master/screenshots/top_skill.png"/>
+<img src="https://github.com/EzekielWachira/GADS2020-LEADERBORD-APP-MAIN/blob/master/screenshots/top_skill.png" width="260" height="500"/>
 <h3>Submission Form</h3>
-<img src="https://github.com/EzekielWachira/GADS2020-LEADERBORD-APP-MAIN/blob/master/screenshots/submit_form.png"/>
+<img src="https://github.com/EzekielWachira/GADS2020-LEADERBORD-APP-MAIN/blob/master/screenshots/submit_form.png" width="260" height="500"/>
 <h3>Confirm Submission</h3>
-<img src="https://github.com/EzekielWachira/GADS2020-LEADERBORD-APP-MAIN/blob/master/screenshots/confirm_submission.png"/>
+<img src="https://github.com/EzekielWachira/GADS2020-LEADERBORD-APP-MAIN/blob/master/screenshots/confirm_submission.png" width="260" height="500"/>
 <h3>Submission Success</h3>
-<img src="https://github.com/EzekielWachira/GADS2020-LEADERBORD-APP-MAIN/blob/master/screenshots/submit_success.png"/>
+<img src="https://github.com/EzekielWachira/GADS2020-LEADERBORD-APP-MAIN/blob/master/screenshots/submit_success.png" width="260" height="500"/>
 <h3>Submission Error</h3>
-<img src="https://github.com/EzekielWachira/GADS2020-LEADERBORD-APP-MAIN/blob/master/screenshots/submit_error.png"/>
+<img src="https://github.com/EzekielWachira/GADS2020-LEADERBORD-APP-MAIN/blob/master/screenshots/submit_error.png" width="260" height="500"/>
 
