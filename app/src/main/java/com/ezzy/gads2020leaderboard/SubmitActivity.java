@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -24,6 +25,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class SubmitActivity extends AppCompatActivity {
+
+    private static final String TAG = "SubmitActivity";
 
     private EditText fNameEditText, lNameEditText, emailEditText, linkEditText;
     private Button submitButton;
@@ -109,6 +112,7 @@ public class SubmitActivity extends AppCompatActivity {
                 DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
                 DefaultRetryPolicy.DEFAULT_BACKOFF_MULT
         ));
+        Log.d(TAG, "postData: " + request);
         queue.add(request);
     }
 

@@ -17,12 +17,12 @@ public class SubmissionSuccessDialog extends DialogFragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                getDialog().dismiss();
-            }
-        }, 3000);
+//        new Handler().postDelayed(new Runnable() {
+//            @Override
+//            public void run() {
+//                getDialog().dismiss();
+//            }
+//        }, 3000);
     }
 
     @Nullable
