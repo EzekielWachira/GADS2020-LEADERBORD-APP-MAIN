@@ -20,3 +20,22 @@ Google Africa Developer Scholarship 2020 Learning phase II practice project
  <li>Volley library</li>
  <li>Dialogs</li>
 </ul>
+<br/>
+<h2>Screenshots</h2>
+<div>
+ <h3>Splash screen</h3>
+<img src="screenshots/splash.png"/>
+ </div>
+ <h3>Top Leaners</h3>
+<img src="https://github.com/EzekielWachira/GADS2020-LEADERBORD-APP-MAIN/blob/master/screenshots/top_learners.png"/>
+<h3>Top Skill IQ</h3>
+<img src="https://github.com/EzekielWachira/GADS2020-LEADERBORD-APP-MAIN/blob/master/screenshots/top_skill.png"/>
+<h3>Submission Form</h3>
+<img src="https://github.com/EzekielWachira/GADS2020-LEADERBORD-APP-MAIN/blob/master/screenshots/submit_form.png"/>
+<h3>Confirm Submission</h3>
+<img src="https://github.com/EzekielWachira/GADS2020-LEADERBORD-APP-MAIN/blob/master/screenshots/confirm_submission.png"/>
+<h3>Submission Success</h3>
+<img src="https://github.com/EzekielWachira/GADS2020-LEADERBORD-APP-MAIN/blob/master/screenshots/submit_success.png"/>
+<h3>Submission Error</h3>
+<img src="https://github.com/EzekielWachira/GADS2020-LEADERBORD-APP-MAIN/blob/master/screenshots/submit_error.png"/>
+
